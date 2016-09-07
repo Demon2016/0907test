@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>导航条</title>
+		<style type="text/css">
+			
+			/*清除默认padding和margin*/
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			
+			/*设置ul*/
+			.nav{
+				/*去除项目符合*/
+				list-style: none;
+				
+				/*设置一个宽度*/
+				width: 1000px;
+				
+				/*为ul设置一个背景*/
+				/*background-color: #bfa;*/
+				
+				/*设置居中*/
+				margin: 100px auto 0;
+				
+				/*解决高度塌陷问题*/
+				overflow: hidden;
+				zoom: 1;
+				
+				/*border: 1px red solid;*/
+			}
+			
+			/*设置li*/
+			.nav li{
+				/*向左浮动*/
+				float: left;
+				/*
+				 * 使用小数作为百分比，不同的浏览器对于小数处理方式不同
+				 * 有的浏览器会将小数部分省略，有的会将小数部分进位，
+				 * 注意尽量避免使用小数
+				 */
+				width:12.5% ;
+			}
+			
+			/*设置超链接的样式*/
+			.nav a{
+				/*将a转换为块元素*/
+				display: block;
+				/*设置背景*/
+				background-color: #6495ED;
+				/*设置上下内边距*/
+				padding: 6px 0;
+				/*居中*/
+				text-align: center;
+				/*白色字体*/
+				color: #fff;
+				/*文字加粗*/
+				font-weight: bold;
+				/*去除下划线*/
+				text-decoration: none;
+				/*设置宽度*/
+				/*width:100% ;*/
+				
+			}
+			
+			/*设置鼠标移入的效果*/
+			.nav a:hover{
+				background-color: #CC0000;
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<!-- 创建导航条HTML结构 -->
+		<ul class="nav">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">新闻</a></li>
+			<li><a href="#">联系</a></li>
+			<li><a href="#">关于</a></li>
+			<li><a href="#">首页</a></li>
+			<li><a href="#">新闻</a></li>
+			<li><a href="#">联系</a></li>
+			<li><a href="#">关于</a></li>
+		</ul>
+		
+		<!--<div style="height: 100px; background-color: yellow;"></div>-->
+		
+	</body>
+</html>
